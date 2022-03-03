@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica;
+    background: #e8e8e8;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    background: rgba(141, 8, 8, 0.836);
+}
+
+.mainMenu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.mainMenu li{
+    text-align:center;
+}
+
+.mainMenu li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
