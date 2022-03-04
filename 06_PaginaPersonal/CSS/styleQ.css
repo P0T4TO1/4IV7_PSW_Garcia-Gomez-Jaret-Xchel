@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica;
-    background: #e8e8e8;
+    background: rgba(141, 8, 8, 0.836);
     margin: 0;
 }
 
@@ -32,6 +32,131 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
     clip-path: inset(0 0% 0 0%);
+    background:rgba(141, 8, 8, 0.836);
 }
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+.textTitle{
+    position: absolute;
+    top: 200px;
+    left: 16%;
+    color: white;
+}
+
+.txtQ{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    text-align: justify;
+    color: white
+}
+
+.hobbie{
+    width: 40%;
+    display: flex;
+    height: 150px;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.containerQ{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+}
+
+.containerQ h1{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+
+.containerQ img{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.containerQ p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 150px;
+    text-align: justify;
+}
+
+.containerTeam{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    padding-top: 150px;
+}
+
+.containerTeam h1{
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-bottom: 50px;
+}
+
+.containerTeam img{
+    width: 500px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.containerTeam p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#subir__arriba{
+    width: 70px;
+    height: 70px;
+    background: rgb(187, 187, 187);
+    color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: fixed;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    border-radius: 60px;
+    border: 10px solid #002299;
+    border-top: 10px solid #1ac771;
+    animation: girar 2s linear infinite;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+

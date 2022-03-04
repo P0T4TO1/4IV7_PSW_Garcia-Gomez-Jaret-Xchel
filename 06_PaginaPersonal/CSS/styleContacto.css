@@ -8,8 +8,8 @@
 
 body{
     font-family: Arial, Helvetica;
-    background: #e8e8e8;
     margin: 0;
+    background-image: url(../Imagenes/fondo2.jpg);
 }
 
 header{
@@ -35,5 +35,6 @@ header{
     text-decoration: none;
     color: white;
 }
+
 
 

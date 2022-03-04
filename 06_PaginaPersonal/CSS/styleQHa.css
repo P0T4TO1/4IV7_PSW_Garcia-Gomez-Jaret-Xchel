@@ -1,6 +1,6 @@
 body{
+    background-image: url(../Imagenes/fondo1.png);
     font-family: Arial, Helvetica;
-    background: #e8e8e8;
     margin: 0;
 }
 
@@ -27,3 +27,35 @@ header{
     text-decoration: none;
     color: white;
 }
+
+.containerQH{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+}
+
+.containerQH h1{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+
+.containerQH img{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.containerQH p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 150px;
+    text-align: justify;
+    color: white;
+    font-weight: bold;
+}
+
+
