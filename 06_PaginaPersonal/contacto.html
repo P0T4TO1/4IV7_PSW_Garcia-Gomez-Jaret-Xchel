@@ -13,7 +13,7 @@
         <nav class="mainMenu" id="menu-principal">
             <ul>
                 <li><img class= "escudoBatiz" src="Imagenes/escudoCECyT9.png" width="60px"></li>
-                <li><a href="index.html">¿Quienes somos?</a></li>
+                <li><a href="../index.html">¿Quienes somos?</a></li>
                 <li><a href="queHacemos.html">¿Que hacemos?</a></li>
                 <li><a href="queVendemos.html">¿Que vendemos?</a></li>
                 <li><a href="proximasEntregas.html">Proximas entregas</a></li>
@@ -23,7 +23,8 @@
     </header>
     
     <br>
-    <form method="post" name="formulario" onsubmit="return validar()" action="">
+    <form method="post" name="formulario" 
+        onsubmit="return validar(this)"  action="">
         <label>Nombre: </label>
         <br>
         <input type="text" name="nombre" id="nombre">
