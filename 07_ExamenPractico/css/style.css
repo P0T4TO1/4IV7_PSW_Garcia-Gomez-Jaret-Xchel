@@ -1,0 +1,16 @@
+body{
+    background-image: url(../images/background.jpg)
+}
+
+form, h1{
+    color: white;
+}
+
+footer{
+    border: 2px solid #1d382a;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}

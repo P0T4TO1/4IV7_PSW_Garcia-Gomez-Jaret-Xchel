@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Práctico</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/tabladin.js"></script>
+
+</head>
+<body>
+
+    <h1 align="center">Examen Práctico</h1>
+    
+    <form name="formulario1">
+        <table style="text-align: left; margin-left: auto; margin-right: auto;">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="valor_automovil">Ingresa el valor del automovil:</label>
+                    </td>
+                    <td>
+                        <input name="valor_automovil" required="required" step="10000.00" type="number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="periodo_pago">Ingresa el periodo en el cual desea adquirir el vehiculo (meses):</label>
+                    </td>
+                    <td>
+                        <input name="periodo_pago" required="required" step="3" type="number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cuota_inicial">Ingresa la cuota inicial (minimo 10% del valor del automovil):</label>
+                    </td>
+                    <td>
+                        <input name="cuota_inicial" required="required" type="number" />
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2" rowspan="1">
+                        <input value="Procesar" type="button" onclick="algoritmo();" />
+                        <input type="reset" value="Borrar datos"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cuota_total">Valor de la cuota total:</label>
+                    </td>
+                    <td>
+                        <input name="cuota_total" type="number"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <div>
+        <footer>
+            <p>
+                <a href="https://github.com/P0T4TO1/4IV7_PSW_Garcia-Gomez-Jaret-Xchel">Link repositorio</a><br>
+                Garcia Gomez Jaret Xchel<br>
+                4IV7<br>
+                Programacion de Servicios Web<br>
+                Boleta: 2021090116
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
