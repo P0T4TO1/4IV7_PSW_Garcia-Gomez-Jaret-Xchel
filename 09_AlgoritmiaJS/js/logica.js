@@ -47,3 +47,50 @@ function problema3(){
 
     document.querySelector('#p3-output').textContent = p3_res;
 }
+
+
+function problema1(){
+    /*var alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M',
+                    'Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'];*/
+
+    // Obtener la cadena del input y separar por espacios
+
+    var p1_input = document.querySelector('#p1-input').value;
+
+    var p1_palabras = p1_input.split(' ');
+
+    // Invertir las palabras
+
+    p1_palabras.reverse();
+
+    document.querySelector('#p1-output').textContent = p1_palabras.join(" ");
+
+}
+
+
+function problema2(){
+
+    var x1 = parseFloat(document.querySelector('#p2-x1').value);
+    var y1 = parseFloat(document.querySelector('#p2-y1').value);
+
+    var x2 = parseFloat(document.querySelector('#p2-x2').value);
+    var y2 = parseFloat(document.querySelector('#p2-y2').value);
+    
+    var x3 = parseFloat(document.querySelector('#p2-x3').value);
+    var y3 = parseFloat(document.querySelector('#p2-y3').value);
+    
+    var x4 = parseFloat(document.querySelector('#p2-x4').value);
+    var y4 = parseFloat(document.querySelector('#p2-y4').value);
+    
+    var x5 = parseFloat(document.querySelector('#p2-x5').value);
+    var y5 = parseFloat(document.querySelector('#p2-y5').value);
+
+    /*var vector1 = [x1,x2,x3,x4,x5];
+    var vector2 = [y1,y2.y3,y4,y5];*/
+
+    var resV = (x1*y1) + (x2*y2) + (x3*y3) + (x4*y4) + (x5*y5);
+
+    document.querySelector('#p2-output').textContent = "Resultado: " + resV;
+
+
+}
