@@ -1,0 +1,130 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 23/04/2022, 10:58:53 PM
+    Author     : Jaret
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+    background-color: #eee004;
+    padding-bottom: 15px;
+}
+
+nav ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li{
+    color: black;
+    display:  block;
+    position: relative;
+    padding: 45px 50px 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.logo{
+    margin-top: 25px;
+    padding-right: 20px;
+}
+
+
+.first-container{
+    display: flex;
+    background-image: url(../images/computer.png);
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 15%;
+}
+
+.botones-container{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#boton{
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px 30px;
+    border: 1px solid rgba(0,0,0,0.5);
+    color: black;
+    background-color: #eee004;
+    font-weight: bold;
+    transition: all 0.25s;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+#boton:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container{
+    align-items: center;
+    list-style: none;
+}
+
+footer{
+    background-color: rgb(219, 215, 215);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    align-items: center;
+    list-style: none;
+}
+
+.logo-footer{
+    text-align: center;
+}
+
+.ul-container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.ul-container-footer ul{
+    display: flex;
+    padding-bottom: 12px;
+    list-style: none;
+    margin: 0;
+    vertical-align: baseline;
+    flex-direction: column;
+}
+
+.ul-container-footer ul li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.ul-container-footer ul li{
+    padding-top: 0.5rem;
+}

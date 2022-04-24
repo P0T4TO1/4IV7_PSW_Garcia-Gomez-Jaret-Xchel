@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Registrar datos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="formulario">
+            <form name="formulario" method="post"
+                action="../jsps/registrardatos.jsp">
+                <label>Nombre</label>
+                <br>
+                <input type="text" name="nombre" onkeypress="return validarn(event)">
+                <br>
+                <label>Apellido paterno</label>
+                <br>
+                <input type="text" name="appat" onkeypress="return validarn(event)">
+                <br>
+                <label>Apellido materno</label>
+                <br>
+                <input type="text" name="apmat" onkeypress="return validarn(event)">
+                <br>
+                <label>Sexo(F o M)</label>
+                <br>
+                <input type="text" name="sexo">
+                <br>
+                <label>Fecha de Nacimiento</label>
+                <br>
+                <input type="date" id="fechanac" name="fechanac">
+                <br>
+                <label>No. de empledo</label>
+                <br>
+                <input type="text" name="numempleado">
+                <br>
+                <br>
+                <input type="submit" value="Registrar" >
+                <br>
+                <input type="reset" value="Borrar Datos">
+            </form>
+            <br>
+            <a href="../index.html" >Regresar</a>
+        </div>
+        
+        <script src="../js/validacion.js"></script>
+    </body>
+</html>
