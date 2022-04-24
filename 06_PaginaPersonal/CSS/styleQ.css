@@ -158,5 +158,14 @@ html{
     }
 }
 
+.proyectos-container{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
 
 
