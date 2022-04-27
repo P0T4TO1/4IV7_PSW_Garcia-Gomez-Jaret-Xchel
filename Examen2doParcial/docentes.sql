@@ -96,7 +96,7 @@ DROP TABLE IF EXISTS mcpu;
 
 CREATE TABLE mcpu (
   idMcpu INT NOT NULL,
-  descripcion VARCHAR(60) NOT NULL,
+  descrip VARCHAR(60) NOT NULL,
   PRIMARY KEY (idMcpu)
   );
 
@@ -166,14 +166,7 @@ CREATE TABLE dequipo (
   id_config INT NULL DEFAULT NULL,
   problema VARCHAR(60) NULL DEFAULT NULL,
   PRIMARY KEY (idDequipo),
-  /*INDEX id_Mcpu_idx (id_Mcpu ASC) VISIBLE,
-  INDEX id_teclado_idx (id_teclado ASC) VISIBLE,
-  INDEX id_mouse_idx (id_mouse ASC) VISIBLE,
-  INDEX id_marca_idx (id_marca ASC) VISIBLE,
-  INDEX id_equiposerial_idx (id_monitor ASC) VISIBLE,
-  INDEX id_edoequipo_idx (id_edoequipo ASC) VISIBLE,
-  INDEX id_lab_idx (id_lab ASC) VISIBLE,
-  INDEX id_config_idx (id_config ASC) VISIBLE,*/
+
   CONSTRAINT id_Mcpu FOREIGN KEY (id_Mcpu) REFERENCES mcpu (idMcpu)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
@@ -201,18 +194,18 @@ CREATE TABLE dequipo (
 
 
 -- -----------------------------------------------------
--- Tabla docentereal
+-- Tabla docentes
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS docentereal;
+DROP TABLE IF EXISTS docentes;
 
-CREATE TABLE docentereal (
+CREATE TABLE docentes (
   num_empleado INT NOT NULL,
   nombre VARCHAR(45) NOT NULL,
   appat VARCHAR(45) NOT NULL,
   apmat VARCHAR(45) NOT NULL,
   sexo VARCHAR(1) NOT NULL,
   fechanacimiento DATETIME NOT NULL,
-  docenterealcol VARCHAR(45) NOT NULL,
+  docentescol VARCHAR(45) NOT NULL,
   PRIMARY KEY (num_empleado)
   );
 
@@ -237,9 +230,6 @@ CREATE TABLE persona (
   id_rol INT NULL DEFAULT NULL,
   id_privilegio INT NULL DEFAULT NULL,
   PRIMARY KEY (id_persona),
-  /*INDEX id_grupo_idx (id_grupo ASC) VISIBLE,
-  INDEX id_rol_idx (id_rol ASC) VISIBLE,
-  INDEX id_privilegio_idx (id_privilegio ASC) VISIBLE)*/
   );
 
 
@@ -261,9 +251,7 @@ CREATE TABLE dreporte (
   id_dreporte VARCHAR(45) NOT NULL,
   id_prioridad INT NULL DEFAULT NULL,
   PRIMARY KEY (id_dreporte),
-  /*INDEX id_equipo_idx (id_equipo ASC) VISIBLE,
-  INDEX id_persona_idx (id_persona ASC) VISIBLE,
-  INDEX id_prioridad_idx (id_prioridad ASC) VISIBLE,*/
+
   CONSTRAINT id_equipo FOREIGN KEY (id_equipo) REFERENCES dequipo (idDequipo)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
