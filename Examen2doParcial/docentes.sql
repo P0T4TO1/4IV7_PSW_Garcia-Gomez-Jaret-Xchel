@@ -296,3 +296,6 @@ CREATE TABLE mreporte (
   PRIMARY KEY (idMreporte)
   );
 
+SHOW TABLES;
+
+SELECT * FROM mreporte;
