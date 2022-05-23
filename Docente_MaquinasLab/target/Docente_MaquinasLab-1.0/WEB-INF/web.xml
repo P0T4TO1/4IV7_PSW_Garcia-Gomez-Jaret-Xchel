@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>guardarElemento</servlet-name>
+        <servlet-class>mvc.Servlet.guardarElemento</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>actualizarElemento</servlet-name>
+        <servlet-class>mvc.Servlet.actualizarElemento</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>eliminarElemento</servlet-name>
+        <servlet-class>mvc.Servlet.eliminarElemento</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>verificarUsuario</servlet-name>
+        <servlet-class>mvc.Servlet.verificarUsuario</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>guardarElemento</servlet-name>
+        <url-pattern>/guardarElemento</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>actualizarElemento</servlet-name>
+        <url-pattern>/actualizarElemento</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>eliminarElemento</servlet-name>
+        <url-pattern>/eliminarElemento</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>verificarUsuario</servlet-name>
+        <url-pattern>/verificarUsuario</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

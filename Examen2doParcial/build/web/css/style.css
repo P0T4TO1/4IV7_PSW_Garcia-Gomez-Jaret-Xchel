@@ -128,3 +128,60 @@ footer{
 .ul-container-footer ul li{
     padding-top: 0.5rem;
 }
+
+/* Formularios */
+
+.formulario-container{
+    padding-top: 15px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    font-size: 18px;
+    margin-top: 5rem;
+}
+
+.formulario{
+    width: 600px;
+    margin: auto;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.formulario h3, .contacto p{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.boton{
+    background: #eee004;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form label{
+    text-align: left;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.formulario a{
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+}
